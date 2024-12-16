@@ -15,7 +15,7 @@ const StudentsList = () => {
           Listen to Our Students
         </h2>
         <p className="text-center text-gray-600 mb-4 text-sm">
-          In a world governed by the need to grow, upskilling adds value to your persona and company's effectiveness. ICFAI Online MBA is flexible to achieve a real work- study balance. But there are more reasons why ICFAI Online MBA might be the best option. Listen to what our students tell about it:
+          In a world governed by the need to grow, upskilling adds value to your persona and company&apos;s effectiveness. ICFAI Online MBA is flexible to achieve a real work- study balance. But there are more reasons why ICFAI Online MBA might be the best option. Listen to what our students tell about it:
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-between sm:px-4">
           <div>

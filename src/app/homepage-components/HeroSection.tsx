@@ -17,7 +17,7 @@ export default function HeroSection() {
         </div>
         <div className="lg:w-2/3 w-full text-left space-y-4">
           <h2 className="text-3xl font-bold text-blue-950">Thinking of an Online MBA or PGDM?</h2>
-          <h2 className="text-3xl font-bold mb-4 text-blue-950">Here's Why You Should Reach Us</h2>
+          <h2 className="text-3xl font-bold mb-4 text-blue-950">Here&apos;s Why You Should Reach Us</h2>
 
           <p className="mb-4 text-lg border-l-2 border-orange-500 pl-2">2 year fully online program<br />Master of Business Administration</p>
           <div className="flex justify-center lg:justify-start space-x-4">
@@ -55,7 +55,7 @@ export default function HeroSection() {
             </div>
           </div>
           <div className='text-gray-600 '>
-            <p className='text-lg'><span className='text-orange-500 font-semibold'>Best University</span> among India's top 25 Online MBA Institutions</p>
+            <p className='text-lg'><span className='text-orange-500 font-semibold'>Best University</span> among India&apos;s top 25 Online MBA Institutions</p>
           </div>
         </div>
       </div>

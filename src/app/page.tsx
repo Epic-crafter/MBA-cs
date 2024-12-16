@@ -8,7 +8,6 @@ import ForWhom from "./homepage-components/ForWhom";
 import Header from "./homepage-components/Header";
 import Header2 from "./homepage-components/Header2";
 import HeroSection from "./homepage-components/HeroSection";
-import StudentsList from "./homepage-components/StudentsList";
 import WhyChoose from "./homepage-components/WhyChoose";
 import WhyMBA from "./homepage-components/WhyMBA";
 

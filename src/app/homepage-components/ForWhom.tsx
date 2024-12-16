@@ -1,6 +1,4 @@
-import Image from "next/image";
 
-// Static data for cards
 const cardData = [
   {
     id: 1,
