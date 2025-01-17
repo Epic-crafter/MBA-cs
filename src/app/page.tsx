@@ -37,7 +37,7 @@ export default function Home() {
         <WhyMBA/>
         <AccreditationsSection/>
       </main>
-      <Footer />
+     
     </div>
   );
 }
