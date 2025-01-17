@@ -26,7 +26,7 @@ const WhyMBA = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:4000/api/leads/create-web", {
+      const response = await fetch("https://crm-server.collegesolution.in/api/leads/create-web", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
