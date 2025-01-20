@@ -64,6 +64,15 @@ body {
   }
 }
 
+.clip-arrow {
+  clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%, 10% 50%);
+  margin-right: -1px; 
+}
+
+.clip-arrow-end {
+  clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%, 10% 50%);
+}
+
 
 @layer base {
   * {
