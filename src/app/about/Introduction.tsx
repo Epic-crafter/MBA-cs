@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const introduction = () => {
@@ -10,7 +11,7 @@ const introduction = () => {
         <div className="items grid grid-cols-1 md:grid-cols-3 gap-4">
 
             <div className="container-1 border-[1px] rounded-lg flex flex-row justify-between p-6 gap-1">
-                <img src="/img/aboutus/naac-logo.jpg.png" alt="" />
+                <Image src="/img/aboutus/naac-logo.jpg.png" alt="" />
                 <div className='text-container flex flex-col gap-1'>
                     <h3>NAAC</h3>
                     <h3>Accredited&nbsp;A++</h3>
@@ -18,7 +19,7 @@ const introduction = () => {
             </div>
 
             <div className="container-2 border-[1px] rounded-lg flex flex-row justify-between p-6 gap-1">
-                <img src="/img/aboutus/aicte-icon.jpg.png" alt="" />
+                <Image src="/img/aboutus/aicte-icon.jpg.png" alt="" />
                 <div className='text-container flex flex-col gap-1'>
                     <h3>AICTE</h3>
                     <h3>Approved</h3>
@@ -27,7 +28,7 @@ const introduction = () => {
 
 
             <div className="container-2 border-[1px] rounded-lg flex flex-row justify-between p-6 gap-1">
-                <img src="/img/aboutus/ugc-icon.jpg.png" alt="" />
+                <Image src="/img/aboutus/ugc-icon.jpg.png" alt="" />
                 <div className='text-container flex flex-col gap-1'>
                     <h3>UGC</h3>
                     <h3>Entitled</h3>
@@ -38,7 +39,7 @@ const introduction = () => {
       </div>
 
       <div className="section-2 flex justify-center items-center pr-10 md:w-1/2 w-full">
-        <img src="/img/aboutus/Frame 1.png" alt="" />
+        <Image src="/img/aboutus/Frame 1.png" alt="" />
       </div>
     </div>
   )

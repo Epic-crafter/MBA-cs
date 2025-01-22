@@ -10,6 +10,7 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 
 import messages from "@/message.json";
+import Image from "next/image";
 
 const Slider = () => {
   return (
@@ -25,7 +26,7 @@ const Slider = () => {
               <CarouselItem key={index}>
                 <div className="p-2">
                   <Card className="flex flex-col md:flex-row items-center md:items-start">
-                    <img
+                    <Image
                       src={message.image}
                       alt={message.title}
                       className="w-full md:w-1/2 flex mt-0 md:mt-10 justify-center items-center h-auto p-4 border-none"
