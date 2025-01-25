@@ -11,6 +11,7 @@ body {
 @layer base {
   :root {
     --background: 0 0% 100%;
+
     --foreground: 224 71.4% 4.1%;
     --card: 0 0% 100%;
     --card-foreground: 224 71.4% 4.1%;
@@ -64,6 +65,15 @@ body {
   }
 }
 
+
+.clip-arrow {
+  clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%, 10% 50%);
+  margin-right: -1px; 
+}
+
+.clip-arrow-end {
+  clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%, 10% 50%);
+}
 
 @layer base {
   * {

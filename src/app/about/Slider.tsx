@@ -12,6 +12,7 @@ import Autoplay from "embla-carousel-autoplay";
 import messages from "@/message.json";
 import Image from "next/image";
 
+
 const Slider = () => {
   return (
     <div className="flex flex-col h-auto px-4 md:px-8 mt-6">
