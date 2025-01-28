@@ -28,7 +28,7 @@ const UpcomingEvents = () => {
     <h1 className='mt-20 text-center text-[#012060] text-[45px] font-[700]'>UPCOMING EVENTS</h1>
     <div className="mt-10 w-full flex md:flex-row flex-col justify-between md:px-8 px-4 gap-3 text-center">
         {events.map((event, i)=> (
-          <div key={i} className='border-[2px] rounded-md border-[#012060] flex flex-col gap-4'>
+          <div key={i} className='border-[2px] rounded-md shadow-[-10px_10px] shadow-[#012060] border-[#012060] flex flex-col gap-4'>
           <Image src={event.img} width={500} height={500} alt='img' className='p-5 w-full'/>
           <h2 className='text-[35px] font-[900] text-[border-[2px] rounded-md text-[#012060]'>{event.head}</h2>
           <div className="flex justify-center gap-4 text-center w-full">
