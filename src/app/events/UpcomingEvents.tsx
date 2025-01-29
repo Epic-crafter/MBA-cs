@@ -24,7 +24,7 @@ const UpcomingEvents = () => {
   },
 ]
   return (
-    <div>
+    <div className='bg-[#E3E3E3] pb-8'>
     <h1 className='mt-20 text-center text-[#012060] text-[45px] font-[700]'>UPCOMING EVENTS</h1>
     <div className="mt-10 w-full flex md:flex-row flex-col justify-between md:px-8 px-4 gap-3 text-center">
         {events.map((event, i)=> (
