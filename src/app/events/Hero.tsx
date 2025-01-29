@@ -17,7 +17,6 @@ const Hero = () => {
     className="h-full object-cover w-full"
     alt="img"
   />
-  {/* Gradient Overlay */}
   <div className="absolute inset-0 bg-gradient-to-l from-transparent to-[#012060] pointer-events-none"></div>
   <div className="absolute inset-0  bg-gradient-to-r from-transparent to-[#012060] pointer-events-none"></div>
 </div>

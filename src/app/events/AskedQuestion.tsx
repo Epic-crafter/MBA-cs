@@ -21,10 +21,10 @@ const AskedQuestion = () => {
   return (
     <div className="bg-[#E9E9E9] py-12">
       <h1 className='mb-6 text-center text-[#012060] text-[45px] font-[700]'>FREQUENTLY ASKED QUESTIONS</h1>
-      <div className="flex md:flex-row flex-col w-full">
+      <div className="flex md:flex-row gap-20 flex-col w-full p-8">
         <div className="section-1 md:w-2/3 flex flex-col gap-5 w-full my-10 px-5">
           {questions.map((item, index) => (
-            <div key={item.id} className='border-[#012060] border-[2px] rounded-lg'>
+            <div key={item.id} className='border-[#012060] shadow-[10px_5px] shadow-[#012060] border-[2px] rounded-lg bg-white'>
               <button onClick={() => toggleAccordion(index)} className='flex justify-between bg-white px-4 rounded-md py-4 w-full'>
                 <span className='text-[22px] font-[800] text-black'>{item.question}</span>
                 {accordionOpen[index] ? (
@@ -42,7 +42,7 @@ const AskedQuestion = () => {
           ))}
         </div>
 
-        <div className="section-2 bg-white md:w-1/3 w-full border-[2px] border-[#012060] rounded-lg p-6 flex flex-col justify-between items-center gap-6">
+        <div className="section-2 bg-white md:w-1/3 w-full border-[2px] border-[#012060] rounded-lg p-8 flex flex-col justify-between items-center gap-6">
           <Image width={100} height={100} src="/img/events/AskedQuestions/Vector 355.png" alt='img' />
           <h3 className="text-[22px] text-[#012060] font-[800] text-center px-3">Do you have more questions?</h3>
           <p className='text-[16px] font-[600] text-black text-center'>End-to-end payments and financial management in a single solution. Meet the right platform to help realize.</p>

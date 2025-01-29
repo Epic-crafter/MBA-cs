@@ -11,7 +11,7 @@ const introduction = () => {
 
         <div className="items grid grid-cols-1 md:grid-cols-3 gap-4">
 
-            <div className="container-1 border-[1px] rounded-lg flex flex-row justify-between p-6 gap-1">
+            <div className="container-1 shadow-[4px_4px] shadow-[#7C74BB] border-[1px] rounded-lg flex flex-row justify-between p-6 gap-1">
                 <Image src="/img/aboutus/naac-logo.jpg.png" width={100} height={100} alt="" className='w-20 h-20' />
                 <div className='text-container flex flex-col gap-1'>
                     <h3>NAAC</h3>
@@ -19,7 +19,7 @@ const introduction = () => {
                 </div>
             </div>
 
-            <div className="container-2 border-[1px] rounded-lg flex flex-row justify-between p-6 gap-1">
+            <div className="container-2 shadow-[4px_4px] shadow-[#7C74BB] border-[1px] rounded-lg flex flex-row justify-between p-6 gap-1">
                 <Image src="/img/aboutus/aicte-icon.jpg.png" width={100} height={100} alt="" className='w-20 h-20' />
                 <div className='text-container flex flex-col gap-1'>
                     <h3>AICTE</h3>
@@ -28,7 +28,7 @@ const introduction = () => {
             </div>
 
 
-            <div className="container-2 border-[1px] rounded-lg flex flex-row justify-between p-6 gap-1">
+            <div className="container-2 shadow-[4px_4px] shadow-[#7C74BB] border-[1px] rounded-lg flex flex-row justify-between p-6 gap-1">
                 <Image src="/img/aboutus/ugc-icon.jpg.png" width={100} height={100} alt="" className='w-20 h-20' />
                 <div className='text-container flex flex-col gap-1'>
                     <h3>UGC</h3>
