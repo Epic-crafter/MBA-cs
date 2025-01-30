@@ -12,11 +12,10 @@ import Autoplay from "embla-carousel-autoplay";
 import messages from "@/message.json";
 import Image from "next/image";
 
-
-const Slider = () => {
+const AluminiReviews = () => {
   return (
     <div className="flex flex-col h-auto px-4 md:px-8 mt-6">
-
+      <h2 className='text-[30px] text-center my-5 text-[#012060] font-[700] md:px-12 px-4'>ALUMINI REVIEWS</h2>
       <div className="flex justify-center items-center mb-10 w-full h-auto px-14">
         <Carousel
           plugins={[Autoplay({ delay: 5000 })]}
@@ -30,8 +29,8 @@ const Slider = () => {
                     <Image
                       src={message.image}
                       alt={message.title}
-                      width={500}
-                      height={500}
+                      width={200}
+                      height={200}
                       className="w-full md:w-1/2 flex mt-0 md:mt-10 justify-center items-center h-auto p-4 border-none"
                     />
                     <div className="text-center md:text-left p-4">
@@ -60,4 +59,4 @@ const Slider = () => {
   );
 };
 
-export default Slider;
+export default AluminiReviews;
