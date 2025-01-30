@@ -103,40 +103,44 @@ export default function ProgramOverview() {
                     <div className="w-full lg:w-1/2">
                         <h3 className="text-white text-4xl sm:text-5xl lg:text-6xl font-bold mb-8 sm:mb-10">{currentProgram.title}</h3>
                         
-                        <div className="bg-white rounded-3xl p-6 md:p-8 relative">
-                            <div className="absolute -right-4 -bottom-4 w-full h-full bg-[#BBD5FF] rounded-3xl -z-10"></div>
-                            
-                            <div className="space-y-6">
-                                <div>
-                                    <h4 className="text-[#0A2472] font-bold text-xl sm:text-2xl mb-2">PROGRAM OVERVIEW:</h4>
-                                    <p className="text-[#0A2472] text-sm sm:text-base">{currentProgram.overview}</p>
-                                </div>
+                        <div className="relative">
+                            {/* Shadow moved to the right */}
+                            <div className="absolute left-2 top-2 w-full h-full bg-[#BBD5FF] rounded-3xl shadow-[8px_8px_0px_#BBD5FF] z-0"></div>
 
-                                <div>
-                                    <h4 className="text-[#0A2472] font-bold text-xl sm:text-2xl mb-2">SPECIALIZATIONS:</h4>
-                                    <ul className="text-[#0A2472] list-disc list-inside space-y-1">
-                                        {currentProgram.specializations.map((spec, index) => (
-                                            <li key={index} className="text-sm sm:text-base">{spec}</li>
-                                        ))}
-                                    </ul>
-                                </div>
+                            {/* Main content card */}
+                            <div className="bg-white rounded-3xl p-6 md:p-8 relative z-10">
+                                <div className="space-y-6">
+                                    <div>
+                                        <h4 className="text-[#0A2472] font-bold text-xl sm:text-2xl mb-2">PROGRAM OVERVIEW:</h4>
+                                        <p className="text-[#0A2472] text-sm sm:text-base">{currentProgram.overview}</p>
+                                    </div>
 
-                                <div>
-                                    <h4 className="text-[#0A2472] font-bold text-xl sm:text-2xl mb-2">KEY FEATURES:</h4>
-                                    <ul className="text-[#0A2472] list-disc list-inside space-y-1">
-                                        {currentProgram.keyFeatures.map((feature, index) => (
-                                            <li key={index} className="text-sm sm:text-base">{feature}</li>
-                                        ))}
-                                    </ul>
-                                </div>
+                                    <div>
+                                        <h4 className="text-[#0A2472] font-bold text-xl sm:text-2xl mb-2">SPECIALIZATIONS:</h4>
+                                        <ul className="text-[#0A2472] list-disc list-inside space-y-1">
+                                            {currentProgram.specializations.map((spec, index) => (
+                                                <li key={index} className="text-sm sm:text-base">{spec}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
 
-                                <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                                    <Button className="bg-[#E98A15] text-white hover:bg-[#d17913]">
-                                        LEARN MORE
-                                    </Button>
-                                    <Button className="bg-[#E98A15] text-white hover:bg-[#d17913]">
-                                        DOWNLOAD BROCHURE
-                                    </Button>
+                                    <div>
+                                        <h4 className="text-[#0A2472] font-bold text-xl sm:text-2xl mb-2">KEY FEATURES:</h4>
+                                        <ul className="text-[#0A2472] list-disc list-inside space-y-1">
+                                            {currentProgram.keyFeatures.map((feature, index) => (
+                                                <li key={index} className="text-sm sm:text-base">{feature}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+
+                                    <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                                        <Button className="bg-[#E98A15] text-white hover:bg-[#d17913]">
+                                            LEARN MORE
+                                        </Button>
+                                        <Button className="bg-[#E98A15] text-white hover:bg-[#d17913]">
+                                            DOWNLOAD BROCHURE
+                                        </Button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
