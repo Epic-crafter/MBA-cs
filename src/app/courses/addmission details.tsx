@@ -15,7 +15,7 @@ export default function AdmissionDetails() {
 
           <div className="relative">
             <div className="flex flex-col sm:flex-row justify-between mb-8">
-              {['DATE', 'DATE', 'DATE', 'DATE'].map((date, index) => (
+              {['DATE', 'Shortlisting Round', 'Round 1', 'Round 2', 'End Date'].map((date, index) => (
                 <div key={index} className="relative w-full sm:w-1/4 mb-4 sm:mb-0">
                   <div className={`h-16 ${
                     index === 0 ? 'bg-[#4169E1]' :
@@ -31,8 +31,8 @@ export default function AdmissionDetails() {
               ))}
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              {['Application Start Date', 'Shortlisting Round', 'Interview Rounds', 'End Date'].map((title, index) => (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+              {['Open for Application: [Insert Date]', 'After the application has been filled in, candidates whose applications have been successful will be invited to attend the first round of interviews or group discussions.','Personal Interviews assessing Academic Qualification, Work Experience, and Motivation.', 'Panel discussions and case study.', 'End Date: [Insert Date]'].map((title, index) => (
                 <div key={index} className="bg-gray-100 p-6 rounded-lg shadow-sm">
                   <h3 className="text-[#0A2472] text-xl font-bold text-center">
                     {title}

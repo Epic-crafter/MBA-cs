@@ -41,9 +41,19 @@ export default function Curriculum() {
               </button>
             </div>
 
-            <p className="text-gray-600 mb-6">
-              Core courses cover foundational, common functional, and capstone areas that all potential managers need to appreciate. They provide the tools and frameworks for analyzing and defining the challenges from specific and integrative perspectives.
-            </p>
+            {activeTab === "MBA" && (
+              <>
+              <p className="text-gray-600 mb-6">
+              The MBA curriculum covers core subjects such as Accounting, Economics, Marketing, Operations Management, Strategy, and Leadership. Thereafter, students are free to specialize in multiple directions depending on career interests, such as finance, marketing, human resources, or business analytics.            </p>
+              </>
+            )}
+
+{activeTab === "PGDM" && (
+              <>
+              <p className="text-gray-600 mb-6">
+              Just as in the case of an MBA, the PGDM curriculum includes a good mix of core foundational business subjects and a good sprinkling of electives. It lays strong emphasis on current industry practices, managerial capabilities, and problem-solving skills. The students are encouraged to choose electives according to their career aspirations such as digital marketing, supply chain, or entrepreneurship.     </p>          
+              </>
+            )}
 
             <div className="mb-8">
               <h3 className="text-xl font-semibold text-gray-800 mb-4">{activeTab} Year I</h3>

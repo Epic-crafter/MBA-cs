@@ -29,9 +29,10 @@ export default function FAQSection() {
                 
                 {/* FAQ Items */}
                 {[
-                  { id: "mba-vs-pgdm", question: "What is the difference between MBA and PGDM?", answer: "Offending belonging promotion provision an be oh consulted ourselves it. Blessing welcomed ladyship she met humoured sir breeding her." },
-                  { id: "career-prospects", question: "What are the career prospects after completing these courses?", answer: "Content for third question goes here." },
-                  { id: "scholarships", question: "Are scholarships available?", answer: "Content for fourth question goes here." }
+                  { id: "mba-vs-pgdm", question: "What is the difference between MBA and PGDM?", answer: "The main difference between an MBA and PGDM lies in the type of institution from where the programs spring. However, generally speaking, MBA programs are run under the aegis of universities, while PGDMs are run under autonomous bodies. The syllabi for the two programs are somewhat similar but include a greater emphasis on work relevance and industry input." },
+                  { id: "timing for mba/pgdm", question: "What are the timings for the MBA/PGDM programs?", answer: "Most of the MBA or PGDM programs require typically two years to complete. Some institutions may grant a one-year accelerated study option for experienced professionals." },
+                  { id: "can i do mba/pgdm", question: "Can I do an MBA/PGDM while working?", answer: "Sure! Many B-schools offer an evening, weekend, or part-time MBA or PGDM course meant for working professionals that allow you to pursue studies while keeping your job active." },
+                  { id: "prepare for mba/pgdm", question: "How do I prepare for MBA/PGDM entrance exams?", answer: "You start preparing for the entrance exam by consulting the syllabus, taking mock tests, and targeting areas such as quantitative aptitude, logical reasoning, and verbal ability. We also offer personal coaching services to help you pass these examinations. " }
                 ].map(({ id, question, answer }) => (
                   <AccordionItem 
                     key={id} 
@@ -62,7 +63,7 @@ export default function FAQSection() {
                   Do you have more questions?
                 </h2>
                 <p className="text-gray-600 mb-8">
-                  End-to-end payments and financial management in a single solution. Meet the right platform to help realize.
+                Feel free to contact us should you have any further questions or need personalized advice regarding the applications for MBA or PGDM programs. We will walk with you through the entire process. Schedule your consultation today, and let us discuss your aspirations!
                 </p>
                 <button 
                   className="w-full bg-[#E98A15] text-white font-semibold py-3 px-6 rounded-md hover:bg-[#d17913] transition-colors"

@@ -14,25 +14,31 @@ export default function ProgramHighlights() {
               <li className="flex items-start">
                 <span className="mr-2">•</span>
                 <div>
-                  <span className="font-semibold text-[#333333]">Duration:</span> 2 years full-time
+                  <span className="font-semibold text-[#333333]">Global Recognition:</span> Recognized worldwide, MBAs and PGDMs offer global career opportunities.
                 </div>
               </li>
               <li className="flex items-start">
                 <span className="mr-2">•</span>
                 <div>
-                  <span className="font-semibold text-[#333333]">Eligibility:</span> Graduation with a minimum of 50% and entrance exams like CAT, XAT, GMAT
+                  <span className="font-semibold text-[#333333]">Expert Faculty:</span> Enjoy engaging classes taught by an array of accomplished professionals in the industry and qualified academicians able to imbue their sessions with real-world knowledge.
                 </div>
               </li>
               <li className="flex items-start">
                 <span className="mr-2">•</span>
                 <div>
-                  <span className="font-semibold text-[#333333]">Learning Methodology:</span> Experiential learning through simulations, live projects, and internships
+                  <span className="font-semibold text-[#333333]">Real-Life Experience:</span> An experience that offers internships, live projects, and collaboration with industry practitioners.
                 </div>
               </li>
               <li className="flex items-start">
                 <span className="mr-2">•</span>
                 <div>
-                  <span className="font-semibold text-[#333333]">International Exposure:</span> Opportunities for exchange programs or overseas internships
+                  <span className="font-semibold text-[#333333]">Career Support:</span> Placement cell; career fairs; career counseling and support to help you further your career and to provide placements for respective career options.
+                </div>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-2">•</span>
+                <div>
+                  <span className="font-semibold text-[#333333]">Alumni Network:</span> A strong alumni network offering mentoring, career guidance, and collaboration opportunities.
                 </div>
               </li>
             </ul>
