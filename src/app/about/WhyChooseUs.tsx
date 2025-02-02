@@ -4,7 +4,7 @@ const WhyChooseUs = () => {
   return (
     <div>
       <h1 className='text-[#012060] text-center text-[30px] font-[700] p-6'>Why Choose Us</h1>
-      <p className="text-[14px] text-[#444444] text-center font-[700] md:px-0 px-3">Founded in [Year], our institution has reached key milestones, gaining recognition as an AICTE-approved and AACSB-accredited leader in education. We focus on providing quality education, aligning with industry demands, and fostering leadership development.</p>
+      <p className="text-[14px] text-[#444444] text-center font-[700] px-4 md:px-10 ">Founded in 2024, our institution has reached key milestones, gaining recognition as an AICTE-approved and AACSB-accredited leader in education. We focus on providing quality education, aligning with industry demands, and fostering leadership development.</p>
       <div className='text-[#012060] py-8 space-y-4'>
 
         <div className='flex justify-center px-4 md:px-8'>
