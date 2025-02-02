@@ -7,7 +7,7 @@ import App from './homepage/app';
 import Wherework from './homepage/work'
 import TestimonialSection from './homepage/testomonials';
 import Getintouch from './homepage/getintouch';
-import AccreditationsSection from './homepage-components/AccreditationsSection.';
+import AccreditationsSection from './homepage/AccreditationsSection.';
 
 
 export default function Home() {
