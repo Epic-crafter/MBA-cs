@@ -5,43 +5,65 @@ import Image from 'next/image';
 import { Button } from "@/components/ui/button"
 import Head from 'next/head';
 
+type ProgramData = {
+    title: string;
+    specializations: string[];
+    Overview?: String,
+    topImage: string;
+    bottomImage: string;
+    // Make optional properties for both programs
+    GeneralDefinition?: string;
+    GlobalExposure?: string;
+    NetworkingOpportunities?: string;
+    IndustryCollaboration?: string;
+    LeadershipDevelopment?: string;
+    IndustryOrientedCurriculum?: string;
+    EntrepreneurialFocus?: string;
+    IndustryTieUpsAndInternships?: string;
+    AGlobalPerspective?: string;
+  };
+
 export default function ProgramOverview() {
     const [activeProgram, setActiveProgram] = useState<'MBA' | 'PGDM'>('MBA');
 
-    const programData = {
+    const programData: Record<string, ProgramData> = {
         MBA: {
             title: 'MBA',
-            overview: 'Our Master of Business Administration program offers a comprehensive curriculum designed to develop strategic thinking and leadership skills.',
+            GeneralDefinition: 'An MBA is a general business degree that is accepted globally and is oriented towards executive training. It is concerned with business strategy, entrepreneurship, innovation, and management, so that candidates can assume executive responsibilities in any sector.',
+            GlobalExposure: 'The insight into various business cultures and practices through the case studies and global business notes gives an international outlook to the masters in business administration students that prepare them for a global career.',
+            NetworkingOpportunities: 'Keep in touch with industry leaders, alumni, and peers to develop a strong professional network.',
+            IndustryCollaboration: 'Many MBA programs include internships, live projects, and corporate sponsor partnerships, which provide students meaningful hands-on experience working on real-world challenges.',
+            LeadershipDevelopment: 'Curriculum emphasizes development in leadership qualities through group projects, leadership workshops, and executive mentoring.',
             specializations: [
-                'Marketing Management',
-                'Financial Management',
-                'Human Resource Management',
-                'Operations and Supply Chain',
-                'Data Analytics',
-            ],
-            keyFeatures: [
-                'Curriculum aligned with current business challenges',
-                'Focus on strategic thinking, leadership, and global perspectives',
-                'Industry projects and internships',
+                'Finance',
+                'Marketing',
+                'Human Resource',
+                'Operations Management',
+                'Supply Chain Management',
+                'Business Analytics',
+                'International Business',
+                'Entrepreneurship',
             ],
             topImage: '/courses/pg.png',
             bottomImage: '/courses/pg1.png',
         },
         PGDM: {
             title: 'PGDM',
-            overview: 'The Post Graduate Diploma in Management program offers a comprehensive business education with a focus on practical skills and industry exposure.',
+            Overview: 'It is a postgraduate diploma in management (PGDM) program, duly recognized and acknowledged by industries for academic rigor, which gives all its emphasis on developing advanced management expertise. Other than students desiring for higher positions in business corporations, entrepreneurs aspiring for expansion can take such a program.',
             specializations: [
-                'Business Analytics',
-                'Digital Marketing',
+                'Marketing',
+                'Finance',
                 'International Business',
-                'Entrepreneurship',
-                'Logistics and Supply Chain Management',
+                'Operations Management',
+                'Business Analytics',
+                'HR Management',
+                'Strategy',
+                'Retail Management',
             ],
-            keyFeatures: [
-                'Industry-oriented curriculum',
-                'Emphasis on case studies and real-world projects',
-                'Extensive industry interface and guest lectures',
-            ],
+            IndustryOrientedCurriculum: 'The PGDM is a program whose curriculum is industry-oriented. The program provides you with on-the-go modifications that allow for a seamless connection with what is practical in the actual business arena.',
+            EntrepreneurialFocus: 'The program emphasizes entrepreneurship through the provision of its courses, thereby enabling one to garner skills for the establishment and growth of any venture.',
+            IndustryTieUpsAndInternships: 'PGDM programs have these wonderful contacts with industries; work with live case studies, internships, knowing business leaders, etc.',
+            AGlobalPerspective: 'PGDM, just like MBA courses, will help you get perspectives on global case studies, exposure to international business trends, and opportunities to learn from international leaders.',
             topImage: '/courses/pg.png',
             bottomImage: '/courses/pg1.png',
         },
@@ -53,7 +75,6 @@ export default function ProgramOverview() {
         <section className="bg-[#012060] relative overflow-hidden py-16 sm:py-20 md:py-24 lg:py-32" aria-labelledby="program-overview-heading">
             <Head>
                 <title>{`${activeProgram} Program Overview | Your Institution Name`}</title>
-                <meta name="description" content={`Explore our ${activeProgram} program: ${currentProgram.overview}`} />
             </Head>
             <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
                 <div className="absolute bottom-0 left-0 w-[300px] md:w-[600px] -bottom-[200px] md:-bottom-[400px]">
@@ -110,10 +131,52 @@ export default function ProgramOverview() {
                             {/* Main content card */}
                             <div className="bg-white rounded-3xl p-6 md:p-8 relative z-10">
                                 <div className="space-y-6">
-                                    <div>
-                                        <h4 className="text-[#0A2472] font-bold text-xl sm:text-2xl mb-2">PROGRAM OVERVIEW:</h4>
-                                        <p className="text-[#0A2472] text-sm sm:text-base">{currentProgram.overview}</p>
-                                    </div>
+
+                                    {activeProgram === 'MBA' && (
+                                        <>
+                                            <div>
+                                                <h4 className="text-[#0A2472] font-bold text-xl sm:text-2xl mb-2">GENERAL DEFINITION:</h4>
+                                                <p className="text-[#0A2472] text-sm sm:text-base">{currentProgram.GeneralDefinition}</p>
+                                            </div>
+                                            <div>
+                                                <h4 className="text-[#0A2472] font-bold text-xl sm:text-2xl mb-2">GLOBAL EXPOSURE:</h4>
+                                                <p className="text-[#0A2472] text-sm sm:text-base">{currentProgram.GlobalExposure}</p>
+                                            </div>
+                                            <div>
+                                                <h4 className="text-[#0A2472] font-bold text-xl sm:text-2xl mb-2">NETWORKING OPPORTUNITIES:</h4>
+                                                <p className="text-[#0A2472] text-sm sm:text-base">{currentProgram.NetworkingOpportunities}</p>
+                                            </div>
+                                            <div>
+                                                <h4 className="text-[#0A2472] font-bold text-xl sm:text-2xl mb-2">LEADERSHIP DEVELOPMENT:</h4>
+                                                <p className="text-[#0A2472] text-sm sm:text-base">{currentProgram.LeadershipDevelopment}</p>
+                                            </div>
+                                        </>
+                                    )}
+
+                                    {activeProgram === 'PGDM' && (
+                                        <>
+                                        <div>
+        <h4 className="text-[#0A2472] font-bold text-xl sm:text-2xl mb-2">OVERVIEW:</h4>
+        <p className="text-[#0A2472] text-sm sm:text-base">{currentProgram.Overview}</p>
+    </div>
+                                            <div>
+                                                <h4 className="text-[#0A2472] font-bold text-xl sm:text-2xl mb-2">INDUSTRY ORIENTED CURRICULUM:</h4>
+                                                <p className="text-[#0A2472] text-sm sm:text-base">{currentProgram.IndustryOrientedCurriculum}</p>
+                                            </div>
+                                            <div>
+                                                <h4 className="text-[#0A2472] font-bold text-xl sm:text-2xl mb-2">ENTREPRENEURIAL FOCUS:</h4>
+                                                <p className="text-[#0A2472] text-sm sm:text-base">{currentProgram.EntrepreneurialFocus}</p>
+                                            </div>
+                                            <div>
+                                                <h4 className="text-[#0A2472] font-bold text-xl sm:text-2xl mb-2">INDUSTRY TIE-UPS AND INTERNSHIPS:</h4>
+                                                <p className="text-[#0A2472] text-sm sm:text-base">{currentProgram.IndustryTieUpsAndInternships}</p>
+                                            </div>
+                                            <div>
+                                                <h4 className="text-[#0A2472] font-bold text-xl sm:text-2xl mb-2">A GLOBAL PERSPECTIVE:</h4>
+                                                <p className="text-[#0A2472] text-sm sm:text-base">{currentProgram.AGlobalPerspective}</p>
+                                            </div>
+                                        </>
+                                    )}
 
                                     <div>
                                         <h4 className="text-[#0A2472] font-bold text-xl sm:text-2xl mb-2">SPECIALIZATIONS:</h4>
@@ -124,14 +187,7 @@ export default function ProgramOverview() {
                                         </ul>
                                     </div>
 
-                                    <div>
-                                        <h4 className="text-[#0A2472] font-bold text-xl sm:text-2xl mb-2">KEY FEATURES:</h4>
-                                        <ul className="text-[#0A2472] list-disc list-inside space-y-1">
-                                            {currentProgram.keyFeatures.map((feature, index) => (
-                                                <li key={index} className="text-sm sm:text-base">{feature}</li>
-                                            ))}
-                                        </ul>
-                                    </div>
+                                    
 
                                     <div className="flex flex-col sm:flex-row gap-4 pt-4">
                                         <Button className="bg-[#E98A15] text-white hover:bg-[#d17913]">

@@ -7,7 +7,7 @@ const introduction = () => {
     <div className='flex md:flex-row flex-col justify-between p-8 '>
       <div className="section-1 flex flex-col items-start w-full gap-6">
         <h2 className='text-[30px] text-[#012060] font-[700]'>INTRODUCTION</h2>
-        <p className="text-[14px] text-[#444444] font-[700]">Founded in [Year], our institution has reached key milestones, gaining recognition <br /> as an AICTE-approved and AACSB-accredited leader in education. We focus on <br /> providing quality education, aligning with industry demands, and fostering <br /> leadership development.</p>
+        <p className="text-[14px] text-[#444444] font-[700]">[Your Firm Name] is a consultancy firm devoted to counseling MBA and PGDM aspirants in their pursuit of premier business institutes.Their expert team guarantees that you will put your best foot forward during admission to renowned institutions like the IIMs and global programs. Working one-on-one with their experienced consultants from the start through school selection, essay writing, and interview preparation, you will effectively unlock your future.</p>
 
         <div className="items grid grid-cols-1 md:grid-cols-3 gap-4">
 
