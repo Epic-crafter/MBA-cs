@@ -102,12 +102,12 @@ export default function TestimonialSection() {
 
   return (
     <section className="bg-gray-100 py-12 sm:py-16 px-4 sm:px-6 lg:px-8" aria-labelledby="testimonial-heading">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         <h2 id="testimonial-heading" className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12">
           Graduate Admissions Testimonials
         </h2>
 
-        <Carousel className="w-full">
+        <Carousel className="w-[90%]">
           <CarouselContent>
             {testimonials.map((testimonial, index) => (
               <CarouselItem key={testimonial.id}>

@@ -47,21 +47,22 @@ const HeroSection = () => {
         aria-labelledby="hero-heading"
         role="banner"
       >
-        <div className="grid lg:grid-cols-2 items-center h-auto lg:h-[650px] relative">
-          <div className="px-6 py-12 space-y-6 sm:py-16 sm:px-8 md:space-y-8 lg:px-12">
+        <div className="grid lg:grid-cols-2 items-center h-auto lg:h-[538px] relative">
+        <div className="px-6 pt-4 pb-12 space-y-6 sm:pb-16 sm:px-8 md:space-y-8 lg:px-12"> 
+
             <div
               className="inline-block px-4 py-2 bg-white rounded-full shadow-lg"
               role="text"
             >
               <p className="text-[#012060] font-extrabold  text-sm">
-                Our Programs
+              Admission Process
               </p>
             </div>
             <h1
               id="hero-heading"
-              className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-snug sm:leading-tight"
+              className="text-4xl sm:text-4xl lg:text-6xl font-bold text-white leading-snug sm:leading-tight"
             >
-              Tailored to Build Tomorrow&apos;s Leaders.
+              Your Journey to Excellence Begins Here.
             </h1>
             <div className="sr-only">
               <p>
@@ -74,7 +75,7 @@ const HeroSection = () => {
 
           <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-full">
             <Image
-              src="/courses/hero.png"
+              src="/admission/hero.png"
               alt="Students engaged in leadership development program in a modern classroom setting"
               fill
               className="rounded-none object-cover object-center"
