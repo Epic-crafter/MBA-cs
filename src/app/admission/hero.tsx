@@ -47,8 +47,9 @@ const HeroSection = () => {
         aria-labelledby="hero-heading"
         role="banner"
       >
-        <div className="grid lg:grid-cols-2 items-center h-auto lg:h-[503px] relative">
-          <div className="px-6 py-12 space-y-6 sm:py-16 sm:px-8 md:space-y-8 lg:px-12">
+        <div className="grid lg:grid-cols-2 items-center h-auto lg:h-[538px] relative">
+        <div className="px-6 pt-4 pb-12 space-y-6 sm:pb-16 sm:px-8 md:space-y-8 lg:px-12"> 
+
             <div
               className="inline-block px-4 py-2 bg-white rounded-full shadow-lg"
               role="text"
@@ -59,7 +60,7 @@ const HeroSection = () => {
             </div>
             <h1
               id="hero-heading"
-              className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-snug sm:leading-tight"
+              className="text-4xl sm:text-4xl lg:text-6xl font-bold text-white leading-snug sm:leading-tight"
             >
               Your Journey to Excellence Begins Here.
             </h1>
