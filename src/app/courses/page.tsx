@@ -1,4 +1,4 @@
-import Nav from './navbar'
+// import Nav from './navbar'
 import Banner from './banner';
 import Hero from './hero';
 import Why from './whymba,pgdm';
@@ -13,7 +13,7 @@ import FAQSection from './faq';
 export default function Home() {
   return (
     <div>
-        <Nav />
+        {/* <Nav /> */}
         <Banner />
         <Hero/>
         <Why/>  

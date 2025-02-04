@@ -4,12 +4,12 @@ import Link from 'next/link';
 
 const HeroSection = () => {
   return (
-    <section className="bg-[#012060] relative overflow-hidden" aria-labelledby="hero-heading">
+    <section className="bg-[#012060] relative overflow-hidden" aria-labelledby="hero-heading h-[580px]">
       <div className="absolute inset-0" aria-hidden="true">
         <Image 
           src="/homepage/ld.png" 
           alt="Decorative background shape"
-          className="absolute bottom-0 left-0 w-[600px] bottom-[-632px]"
+          className="absolute bottom-0 left-0 w-[600px] bottom-[-650px]"
           width={600}
           height={632}
           priority
@@ -26,14 +26,14 @@ const HeroSection = () => {
 
       <div className="container mx-auto px-6 py-32 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div className="space-y-8">
-            <div className="inline-block px-4 py-2 bg-white rounded-full shadow-lg">
-              <p className="text-[#012060] font-medium text-sm">
+          <div className="space-y-8 ml-[91px]">
+            <div className="inline-block px-4 py-2 bg-white rounded-full shadow-lg ">
+              <p className="text-[#012060] font-extrabold text-l">
                 MBA & PGDM admissions consulting
               </p>
             </div>
 
-            <h1 id="hero-heading" className="text-5xl lg:text-6xl font-bold text-white leading-tight">
+            <h1 id="hero-heading" className="text-2xl lg:text-5xl font-bold text-white leading-tight">
               Shaping Global Leaders of Tomorrow
             </h1>
 
@@ -41,13 +41,13 @@ const HeroSection = () => {
               Craft competitive MBA and PGDM applications for top schools.
             </p>
 
-            <Link href="/next-step" className="inline-block px-8 py-4 bg-[#F4A261] hover:bg-[#E76F51] transition-colors rounded-lg text-white font-medium text-sm">
+            <Link href="/next-step" className="inline-block px-8 py-4 bg-[#F89D34] hover:bg-[#E76F51] transition-colors rounded-full text-white font-medium text-sm">
               Ready for the Next Step?
             </Link>
           </div>
 
           <div className="hidden lg:block relative">
-            <div className="relative w-[500px] h-[500px] rounded-full overflow-hidden">
+            <div className="relative w-[421px] h-[376px] top-[-28] left-[85px] rounded-full overflow-hidden">
               <Image
                 src="/homepage/ci.png"
                 alt="Business professionals collaborating"
@@ -56,8 +56,8 @@ const HeroSection = () => {
                 priority
                 style={{ objectFit: 'cover' }}
               />
-              <div className="absolute -top-2 -right-2 -bottom-2 -left-2 border-2 border-white/10 rounded-full"></div>
-              <div className="absolute -top-4 -right-4 -bottom-4 -left-4 border-2 border-white/5 rounded-full"></div>
+           
+             
             </div>
           </div>
         </div>
