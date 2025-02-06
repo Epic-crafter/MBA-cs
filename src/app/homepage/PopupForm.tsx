@@ -16,12 +16,14 @@ const PopupForm = () => {
     queries: "",
   });
 
-  useEffect(()=>{
-    setInterval(()=>{
-        setVisible(true)
-    },5000)
-  },[])
-
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setVisible(true);
+    }, 5000); // 8 seconds delay
+  
+    return () => clearTimeout(timeout); // Cleanup function
+  }, []);
+  
   // Handle input changes
   const handleChange = (e: any) => {
     const { name, value } = e.target;
