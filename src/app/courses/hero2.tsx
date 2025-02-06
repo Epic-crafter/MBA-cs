@@ -8,7 +8,7 @@ import Head from 'next/head';
 type ProgramData = {
     title: string;
     specializations: string[];
-    Overview?: String,
+    Overview?: string,
     topImage: string;
     bottomImage: string;
     // Make optional properties for both programs

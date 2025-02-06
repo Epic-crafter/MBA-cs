@@ -43,7 +43,7 @@ export default function ProgramsOffered() {
               {activeProgram} Program Overview
             </h3>
             <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
-              Our {activeProgram} program is designed to equip you with the skills and knowledge needed to excel in today's dynamic business environment. With a focus on practical learning and industry-relevant coursework, you'll be prepared to take on leadership roles in various sectors.
+              Our {activeProgram} program is designed to equip you with the skills and knowledge needed to excel in today&apos;s dynamic business environment. With a focus on practical learning and industry-relevant coursework, you&apos;ll be prepared to take on leadership roles in various sectors.
             </p>
             <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-6 sm:mb-8">
               The curriculum covers a wide range of business disciplines, allowing you to gain a comprehensive understanding of modern business practices while also specializing in your area of interest.

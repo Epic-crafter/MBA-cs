@@ -38,7 +38,7 @@ export default function AdmissionProcess() {
             <h2 className="font-bold mb-2 text-center">STEP 1: CHECK ELIGIBILITY</h2>
             <p className="text-sm mb-2">Ensure you meet the following criteria:</p>
             <ul className="text-sm list-disc pl-4 mb-2">
-              <li>Bachelor's degree with a minimum of 50% (45% for reserved categories).</li>
+              <li>Bachelor&apos;s degree with a minimum of 50% (45% for reserved categories).</li>
               <li>Accepted exams: CAT, XAT, GMAT, MAT, CMAT.</li>
               <li>Work experience (if required).</li>
             </ul>
