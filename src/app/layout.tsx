@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import PopupForm from "./homepage-components/PopupForm";
+import PopupForm from "./homepage/PopupForm";
 import Footer from "./homepage/Footer";
 import Nav from './homepage/navbar'
 
@@ -31,7 +31,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Nav />
-        {/* <PopupForm/> */}
+        <PopupForm/>
         
         {children}
 

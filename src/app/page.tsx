@@ -16,13 +16,13 @@ export default function Home() {
         
         <Banner />
         <Hero/>
-        <AboutUs/>
+        <AccreditationsSection/>
         <ProgramsOffered/>
+        <AboutUs/>
         <Wherework/>    
         <App/>
         <TestimonialSection/>
         <Getintouch/>
-        <AccreditationsSection/>
   
       
     </div>

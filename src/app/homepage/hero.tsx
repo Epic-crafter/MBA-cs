@@ -41,7 +41,7 @@ const HeroSection = () => {
               Craft competitive MBA and PGDM applications for top schools.
             </p>
 
-            <Link href="/next-step" className="inline-block px-8 py-4 bg-[#F89D34] hover:bg-[#E76F51] transition-colors rounded-full text-white font-medium text-sm">
+            <Link href="/next-step" className="inline-block px-8 py-4  bg-orange-500 hover:bg-[#E76F51] transition-colors rounded-full text-white font-medium text-sm">
               Ready for the Next Step?
             </Link>
           </div>
