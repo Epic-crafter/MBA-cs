@@ -133,7 +133,7 @@ const Navbar = () => {
 
             {/* Desktop Navigation with Semantic HTML */}
             <div className="hidden lg:block" role="navigation">
-              <ul className="flex space-x-8 text-white text-sm font-semibold">
+              <ul className="flex space-x-8 text-white text-sm font-medium">
                 {navLinks.map((link) => (
                   <li key={link.href}>
                     <Link 
