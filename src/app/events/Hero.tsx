@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div className='bg-[#012060] flex md:flex-row flex-col md:h-[500px]'>
       <div className="section-1 text-section p-6 md:w-1/2 flex flex-col justify-center md:text-start text-center">
-        <span className='text-[15px] md:text-start text-center font-[700] bg-white text-[#06182F] rounded-md w-[140px]'>Explore Our Blogs.</span>
+        <span className='text-[15px] md:text-center text-center font-[700] bg-white text-[#06182F] rounded-md w-[140px] w-[150px]'>Explore Our Blogs.</span>
         <h1 className='text-[50px] font-[700] text-white '>Your Guide to Knowledge, Industry Trends, and  Success.</h1>
       </div>
 

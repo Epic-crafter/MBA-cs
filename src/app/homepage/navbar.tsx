@@ -48,8 +48,8 @@ const Navbar = () => {
       description: 'Comprehensive information about our university'
     },
     { 
-      href: '/cat-calculator', 
-      text: 'CAT Calculator',
+      href: '/catprecentilecalculator', 
+      text: 'Cat Percentile Calculator',
       description: 'Calculate your CAT exam score and percentile'
     },
   ];
