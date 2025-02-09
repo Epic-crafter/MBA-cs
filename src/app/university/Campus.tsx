@@ -11,11 +11,19 @@ const Campus = () => {
                 <img src="/img/aboutus/campus/Rectangle 8.png" className='w-full md:w-1/3' alt="" />
                 <img src="/img/aboutus/campus/Rectangle 9.png" className='w-full md:w-1/3' alt="" />
             </div>
-            <div className='flex md:flex-row gap-3 flex-col mb-10'>
+            <div className='flex md:flex-row gap-3 flex-col mb-3'>
             <img src="/img/aboutus/campus/Rectangle 7.png" className='w-full md:w-1/3' alt="" />
                 <img src="/img/aboutus/campus/Rectangle 8.png" className='w-full md:w-1/3' alt="" />
                 <img src="/img/aboutus/campus/Rectangle 9.png" className='w-full md:w-1/3' alt="" />
             </div>
+
+            <div className="flex justify-center mt-3">
+  <button className="bg-[#F6851E] rounded-[10px] text-white font-bold text-sm px-4 py-2 md:text-base md:px-6 md:py-3 lg:text-lg lg:px-8 lg:py-4 mb-2">
+    TAKE CAMPUS TOUR
+  </button>
+</div>
+
+
         </div>
     </div>
 
