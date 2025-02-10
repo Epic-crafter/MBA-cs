@@ -71,6 +71,12 @@ const FacultyAndStaff = () => {
         </div>
     ))}
     </div>
+    <div className="flex justify-center mt-5">
+  <button className="bg-[#F6851E] rounded-[10px] text-white font-bold text-sm px-4 py-2 md:text-base md:px-6 md:py-3 lg:text-lg lg:px-8 lg:py-4 mb-2">
+    EXPLORE FACULTY
+  </button>
+</div>
+
     </div>
   )
 }
