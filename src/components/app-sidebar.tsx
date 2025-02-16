@@ -28,12 +28,11 @@ const items = [
 
 export function AppSidebar() {
   return (
-    <Sidebar>
+    <Sidebar className="border-0">
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel></SidebarGroupLabel>
-          <SidebarGroupContent className="mt-10">
-            <SidebarMenu>
+          <SidebarGroupContent className="mt-20">
+            <SidebarMenu className="border-0">
               {items.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
